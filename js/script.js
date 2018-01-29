@@ -1,5 +1,6 @@
 $(document).ready(function() {
   function genrateQuote() {
+    console.log("works here");
     $.getJSON("../API/quote.json", function(json) {
 
       var newQuote = Math.floor((Math.random() * json.length));
