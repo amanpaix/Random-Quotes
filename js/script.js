@@ -1,7 +1,7 @@
 $(document).ready(function() {
   function genrateQuote() {
     console.log("works here");
-    $.getJSON("../API/quote.json", function(json) {
+    $.getJSON("https://amanpaix.github.io/Random-Quotes/API/quote.json", function(json) {
 
       var newQuote = Math.floor((Math.random() * json.length));
       $("#message").html("&ldquo;" + json[newQuote].quote + "&rdquo;").fadeOut(0).fadeIn(2000);
